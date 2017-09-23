@@ -25,6 +25,20 @@ enum Router: URLRequestConvertible {
     case exchangeTransaction(parameters: Parameters)
     case accountInfo(parameters: Parameters)
     case rippleInfo(parameters: Parameters)
+    case addSource(parameters: Parameters)
+    case updateSource(parameters: Parameters)
+    case getSource(parameters: Parameters)
+    case deletetSource(parameters: Parameters)
+    case customerCards(parameters: Parameters)
+    case accountBanks(parameters: Parameters)
+    case customerBanks(parameters: Parameters)
+    case accountCards(parameters: Parameters)
+    case newCard(parameters: Parameters)
+    case payout(parameters: Parameters)
+    case setPayout(parameters: Parameters)
+    case verifyToken(parameters: Parameters)
+    case exist(parameters: Parameters)
+    case instantPayout(parameters: Parameters)
     
     static let baseURLString = "https://ripple-exchange-app.herokuapp.com/"
     static let token = ""
@@ -57,41 +71,97 @@ enum Router: URLRequestConvertible {
                 return .get
             case .rippleInfo:
                 return .get
-        default:
-            return .get
+            case .addSource:
+                return .post
+            case .updateSource:
+                return .post
+            case .getSource:
+                return .post
+            case .deletetSource:
+                return .post
+            case .customerCards:
+                return .post
+            case .accountBanks:
+                return .post
+            case .customerBanks:
+                return .post
+            case .accountCards:
+                return .post
+            case .newCard:
+                return .post
+            case .payout:
+                return .post
+            case .instantPayout:
+                return .post
+            case .setPayout:
+                return .post
+            case .verifyToken:
+                return .get
+            case .exist:
+                return .post
+            default:
+                return .get
         }
     }
     
     var path: String {
         switch self {
             case .createUser:
-                return "/users"
+                return "/createUser"
             case .newAccount:
-                return "/users/"
+                return "/newAccount"
             case .createCustomer:
-                return "/users/"
+                return "/createCustomer"
             case .signIn:
-                return "/users/"
+                return "/signIn"
             case .addInbound:
-                return "/users/"
+                return "/addInbound"
             case .createOutBound:
-                return "/users/"
+                return "/createOutBound"
             case .withdrawInbound:
-                return "/users/"
+                return "/withdrawInbound"
             case .withdrawOutbound:
-                return "/users/"
+                return "/withdrawOutbound"
             case .deposit:
-                return "/users/"
+                return "/deposit"
             case .transaction:
-                return "/users/"
+                return "/transaction"
             case .exchangeTransaction:
-                return "/users/"
+                return "/exchangeTransaction"
             case .accountInfo:
-                return "/users/"
+                return "/accountInfo"
             case .rippleInfo:
-                return "/users/"
-        default:
-            return ""
+                return "/rippleInfo"
+            case .addSource:
+                return "/addSource"
+            case .updateSource:
+                return "/updateSource"
+            case .getSource:
+                return "/getSource"
+            case .deletetSource:
+                return "/deletetSource"
+            case .customerCards:
+                return "/customerCards"
+            case .accountBanks:
+                return "/accountBanks"
+            case .customerBanks:
+                return "/customerBanks"
+            case .accountCards:
+                return "/accountCards"
+            case .newCard:
+                return "/newCard"
+            case .payout:
+                return "/payout"
+            case .instantPayout:
+                return "/instantPayout"
+            case .setPayout:
+                return "/setPayout"
+            case .verifyToken:
+                return "/verifyToken"
+            case .exist:
+                return "/exist"
+            default:
+                return ""
         }
     }
     // MARK: URLRequestConvertible
