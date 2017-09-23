@@ -10,40 +10,90 @@ import Foundation
 import Alamofire
 
 enum Router: URLRequestConvertible {
+    
     case createUser(parameters: Parameters)
-    case readUser(username: String)
-    case updateUser(username: String, parameters: Parameters)
-    case destroyUser(username: String)
+    case newAccount(parameters: Parameters)
+    case createCustomer(parameters: Parameters)
+    case signIn(parameters: Parameters)
+    case addInbound(parameters: Parameters)
+    case createOutBound(parameters: Parameters)
+    case charge(parameters: Parameters)
+    case withdrawInbound(parameters: Parameters)
+    case withdrawOutbound(parameters: Parameters)
+    case deposit(parameters: Parameters)
+    case transaction(parameters: Parameters)
+    case exchangeTransaction(parameters: Parameters)
+    case accountInfo(parameters: Parameters)
+    case rippleInfo(parameters: Parameters)
     
     static let baseURLString = "https://ripple-exchange-app.herokuapp.com/"
     static let token = ""
     
     var method: HTTPMethod {
         switch self {
-        case .createUser:
-            return .post
-        case .readUser:
+            case .createUser:
+                return .post
+            case .newAccount:
+                return .post
+            case .createCustomer:
+                return .post
+            case .signIn:
+                return .post
+            case .addInbound:
+                return .post
+            case .createOutBound:
+                return .post
+            case .withdrawInbound:
+                return .post
+            case .withdrawOutbound:
+                return .post
+            case .deposit:
+                return .get
+            case .transaction:
+                return .get
+            case .exchangeTransaction:
+                return .post
+            case .accountInfo:
+                return .get
+            case .rippleInfo:
+                return .get
+        default:
             return .get
-        case .updateUser:
-            return .put
-        case .destroyUser:
-            return .delete
         }
     }
     
     var path: String {
         switch self {
-        case .createUser:
-            return "/users"
-        case .readUser(let username):
-            return "/users/\(username)"
-        case .updateUser(let username, _):
-            return "/users/\(username)"
-        case .destroyUser(let username):
-            return "/users/\(username)"
+            case .createUser:
+                return "/users"
+            case .newAccount:
+                return "/users/"
+            case .createCustomer:
+                return "/users/"
+            case .signIn:
+                return "/users/"
+            case .addInbound:
+                return "/users/"
+            case .createOutBound:
+                return "/users/"
+            case .withdrawInbound:
+                return "/users/"
+            case .withdrawOutbound:
+                return "/users/"
+            case .deposit:
+                return "/users/"
+            case .transaction:
+                return "/users/"
+            case .exchangeTransaction:
+                return "/users/"
+            case .accountInfo:
+                return "/users/"
+            case .rippleInfo:
+                return "/users/"
+        default:
+            return ""
         }
     }
-    
     // MARK: URLRequestConvertible
     
     func asURLRequest() throws -> URLRequest {
@@ -53,12 +103,17 @@ enum Router: URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
         
         switch self {
-        case .createUser(let parameters):
-            urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
-        case .updateUser(_, let parameters):
-            urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
-        default:
-            break
+            case .createUser(let parameters):
+                urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+            case .newAccount(let parameters):
+                urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+            case .createCustomer(let parameters):
+                urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+            case .signIn(let parameters):
+                urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
+        
+            default:
+                break
         }
         urlRequest.setValue(Router.token, forHTTPHeaderField: "Authorization")
         return urlRequest
