@@ -159,12 +159,115 @@ class Presenter {
         }
     }
     
+    func presentGetSource(account:String,sourceId:String){
+        let params = Params().getSource(account: account, sourceId: sourceId)
+        client.fetch(request: Router.getSource(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
     
+    func deleteSource(account:String,external_account:String) {
+        let params = Params().deleteSource(account: account, external_account: external_account)
+        client.fetch(request: Router.deletetSource(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
     
+    func presentCustomerCards(customer:String){
+        let params = Params().customerCards(customer: customer)
+        client.fetch(request: Router.customerCards(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+        
+    }
     
+    func presentCustomerBanks(customer:String){
+        let params = Params().customerBanks(customer: customer)
+        client.fetch(request: Router.customerBanks(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+        
+    }
     
+    func presentAccountBanks(account:String){
+        let params = Params().customerBanks(customer: account)
+        client.fetch(request: Router.accountBanks(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+        
+    }
     
+    func presentAccountCards(account:String){
+        let params = Params().customerCards(customer: account)
+        client.fetch(request: Router.accountCards(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+        
+    }
     
+    func presentNewCard(customer:String,token:String) {
+        let params = Params().newCard(customer: customer, token: token)
+        client.fetch(request: Router.newCard(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
     
+    func presentPayout(sourceType:String,account:String,amount:String) {
+        let params = Params().payout(sourceType: sourceType, account: account, amount: amount)
+        client.fetch(request: Router.payout(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
     
+    func presentInstantPayout(account:String,amount:String) {
+        let params = Params().instantPayout(account: account, amount: amount)
+        client.fetch(request: Router.instantPayout(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
+    
+    func presentSetPayout(account:String,interval:String) {
+        let params = Params().setPayout(account: account, interval: interval)
+        client.fetch(request: Router.setPayout(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
+    
+    func presentVerifyToken(token:String) {
+        let params = Params().verifyToken(token: token)
+        client.fetch(request: Router.verifyToken(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
+    
+    func presentExist(email:String) {
+        let params = Params().exist(email: email)
+        client.fetch(request: Router.exist(parameters: params)) { (json, error) in
+            guard error == nil else {
+                return
+            }
+        }
+    }
 }
