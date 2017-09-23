@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D9D53B21F760F150096EEB2 /* ExchangeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D53B11F760F150096EEB2 /* ExchangeClient.swift */; };
 		4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC68191F7559CD001A3185 /* AppDelegate.swift */; };
 		4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC681B1F7559CD001A3185 /* ViewController.swift */; };
 		4DFC681F1F7559CD001A3185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC681D1F7559CD001A3185 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		4DFC68241F7559CD001A3185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC68221F7559CD001A3185 /* LaunchScreen.storyboard */; };
 		4DFC682F1F7559CE001A3185 /* Ripple_ExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC682E1F7559CE001A3185 /* Ripple_ExchangeTests.swift */; };
 		4DFC683A1F7559CE001A3185 /* Ripple_ExchangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC68391F7559CE001A3185 /* Ripple_ExchangeUITests.swift */; };
+		A0A132ABA468D3ADE630F669 /* Pods_Ripple_Exchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A850954035544BACDCECEA /* Pods_Ripple_Exchange.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ripple_Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange.release.xcconfig"; sourceTree = "<group>"; };
+		4D9D53B11F760F150096EEB2 /* ExchangeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeClient.swift; sourceTree = "<group>"; };
 		4DFC68161F7559CD001A3185 /* Ripple_Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ripple_Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC68191F7559CD001A3185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DFC681B1F7559CD001A3185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		4DFC68351F7559CE001A3185 /* Ripple_ExchangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ripple_ExchangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC68391F7559CE001A3185 /* Ripple_ExchangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripple_ExchangeUITests.swift; sourceTree = "<group>"; };
 		4DFC683B1F7559CE001A3185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F71CB0E13583FCED1E299F /* Pods-Ripple_Exchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ripple_Exchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A850954035544BACDCECEA /* Pods_Ripple_Exchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ripple_Exchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A132ABA468D3ADE630F669 /* Pods_Ripple_Exchange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D562CF68E912469B78DFA03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6F71CB0E13583FCED1E299F /* Pods-Ripple_Exchange.debug.xcconfig */,
+				05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D9D53B01F760ED70096EEB2 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				4D9D53B11F760F150096EEB2 /* ExchangeClient.swift */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
 		4DFC680D1F7559CD001A3185 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				4DFC682D1F7559CE001A3185 /* Ripple_ExchangeTests */,
 				4DFC68381F7559CE001A3185 /* Ripple_ExchangeUITests */,
 				4DFC68171F7559CD001A3185 /* Products */,
+				4D562CF68E912469B78DFA03 /* Pods */,
+				842060726BD69460ED00E14C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +123,7 @@
 		4DFC68181F7559CD001A3185 /* Ripple_Exchange */ = {
 			isa = PBXGroup;
 			children = (
+				4D9D53B01F760ED70096EEB2 /* Clients */,
 				4DFC68191F7559CD001A3185 /* AppDelegate.swift */,
 				4DFC681B1F7559CD001A3185 /* ViewController.swift */,
 				4DFC681D1F7559CD001A3185 /* Main.storyboard */,
@@ -125,6 +152,14 @@
 			path = Ripple_ExchangeUITests;
 			sourceTree = "<group>";
 		};
+		842060726BD69460ED00E14C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3A850954035544BACDCECEA /* Pods_Ripple_Exchange.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DFC683E1F7559CE001A3185 /* Build configuration list for PBXNativeTarget "Ripple_Exchange" */;
 			buildPhases = (
+				141A11B0C83DA8A9A7B9541E /* [CP] Check Pods Manifest.lock */,
 				4DFC68121F7559CD001A3185 /* Sources */,
 				4DFC68131F7559CD001A3185 /* Frameworks */,
 				4DFC68141F7559CD001A3185 /* Resources */,
+				2472458187EDF62F1B5F2F0B /* [CP] Embed Pods Frameworks */,
+				6F7D4BAF9A546797C0CAE304 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +292,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		141A11B0C83DA8A9A7B9541E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ripple_Exchange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2472458187EDF62F1B5F2F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7D4BAF9A546797C0CAE304 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DFC68121F7559CD001A3185 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */,
+				4D9D53B21F760F150096EEB2 /* ExchangeClient.swift in Sources */,
 				4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +507,7 @@
 		};
 		4DFC683F1F7559CE001A3185 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F71CB0E13583FCED1E299F /* Pods-Ripple_Exchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ripple_Exchange/Info.plist;
@@ -424,6 +520,7 @@
 		};
 		4DFC68401F7559CE001A3185 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Ripple_Exchange/Info.plist;
@@ -507,6 +604,7 @@
 				4DFC68401F7559CE001A3185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DFC68411F7559CE001A3185 /* Build configuration list for PBXNativeTarget "Ripple_ExchangeTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +613,7 @@
 				4DFC68431F7559CE001A3185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DFC68441F7559CE001A3185 /* Build configuration list for PBXNativeTarget "Ripple_ExchangeUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +622,7 @@
 				4DFC68461F7559CE001A3185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
