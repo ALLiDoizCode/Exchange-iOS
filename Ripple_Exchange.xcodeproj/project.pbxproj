@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */; };
 		4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FA5601F76C2E2007B4492 /* Params.swift */; };
-		4D9D53B21F760F150096EEB2 /* ExchangeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D53B11F760F150096EEB2 /* ExchangeClient.swift */; };
+		4D9D53B21F760F150096EEB2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D53B11F760F150096EEB2 /* Router.swift */; };
 		4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC68191F7559CD001A3185 /* AppDelegate.swift */; };
 		4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC681B1F7559CD001A3185 /* ViewController.swift */; };
 		4DFC681F1F7559CD001A3185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC681D1F7559CD001A3185 /* Main.storyboard */; };
@@ -38,8 +39,9 @@
 
 /* Begin PBXFileReference section */
 		05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ripple_Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange.release.xcconfig"; sourceTree = "<group>"; };
+		4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeClient.swift; sourceTree = "<group>"; };
 		4D0FA5601F76C2E2007B4492 /* Params.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
-		4D9D53B11F760F150096EEB2 /* ExchangeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeClient.swift; sourceTree = "<group>"; };
+		4D9D53B11F760F150096EEB2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4DFC68161F7559CD001A3185 /* Ripple_Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ripple_Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC68191F7559CD001A3185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DFC681B1F7559CD001A3185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				4D0FA55F1F76C2B2007B4492 /* Parameters */,
-				4D9D53B11F760F150096EEB2 /* ExchangeClient.swift */,
+				4D9D53B11F760F150096EEB2 /* Router.swift */,
+				4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */,
 			);
 			name = Clients;
 			sourceTree = "<group>";
@@ -365,7 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */,
-				4D9D53B21F760F150096EEB2 /* ExchangeClient.swift in Sources */,
+				4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */,
+				4D9D53B21F760F150096EEB2 /* Router.swift in Sources */,
 				4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */,
 				4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */,
 			);
