@@ -12,7 +12,9 @@ import SwiftyJSON
 
 class ExchangeClient {
     
-    func fetch(request:URLConvertible,completion:@escaping (_ json:JSON?,_ error:Error? ) -> Void){
+    static let sharedInstance = ExchangeClient()
+    
+    func fetch(request:URLRequestConvertible,completion:@escaping (_ json:JSON?,_ error:Error? ) -> Void){
         Alamofire.request(request).responseData { (response) in
             
             guard response.error == nil else {
@@ -24,7 +26,7 @@ class ExchangeClient {
             }
             
             let json = JSON(data: result)
-            completion(json,response.error!)
+            completion(json,nil)
         }
     }
 }

@@ -195,7 +195,7 @@ class Params {
         return parameters
     }
     
-    func upSource(account:String,external_account:String,default_for_currency:String) -> Parameters {
+    func updateSource(account:String,external_account:String,default_for_currency:String) -> Parameters {
         
         let parameters:Parameters = [
             
