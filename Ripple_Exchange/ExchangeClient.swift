@@ -22,6 +22,7 @@ class ExchangeClient {
                 return
             }
             guard let result = response.value else {
+                completion(nil,nil)
                 return
             }
             
