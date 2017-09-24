@@ -13,17 +13,25 @@ class Presenter {
     
     let client = ExchangeClient.sharedInstance
     
-    func presentSignIn(email:String,password:String){
+    func presentSignIn(email:String,password:String,completion:@escaping (_ error:Error?) -> Void){
         
         let params = Params().signIn(email: email, password: password)
         
         client.fetch(request: Router.signIn(parameters: params)) { (json, error) in
             
             guard error == nil else {
+                completion(error)
                 return
             }
-            
-            print("user is \(json)")
+            let customerId = json!["cusotmString(describing: erId)"].stringValue
+            let connected_Account_Id = json!["connected_Account_Id"].stringValue
+            let token = json!["token"].stringValue
+            User(customerId: customerId, connected_Account_Id: connected_Account_Id, token: token)
+            User.currentUser.email = email
+            User.currentUser.password = password
+            Router.token = token
+            print("user is \(String(describing: json))")
+            completion(nil)
         }
     }
     
@@ -134,12 +142,27 @@ class Presenter {
         }
     }
     
-    func presentAccountInfo(email:String,password:String) {
-        let params = Params().accountInfo(email: email, password: password)
+    func presentAccountInfo(email:String,password:String, completion:@escaping (_ success:Bool,_ error:Error?) ->Void) {
+        let params = Params().accountInfo(email: email,password: password)
         client.fetch(request: Router.accountInfo(parameters: params)) { (json, error) in
             guard error == nil else {
+                completion(false,error)
                 return
             }
+            
+            print("json:\(String(describing: json))")
+            
+            let inbound = json!["inbound"]["result"]["account_data"]["Balance"].stringValue
+            let outbound = json!["outbound"]["result"]["account_data"]["Balance"].stringValue
+            let token = json!["token"].stringValue
+            print("inbound \(inbound)")
+            print("outbound \(outbound)")
+            
+            User.currentUser.inboundBalance = inbound
+            User.currentUser.outBoundBalance = outbound
+            Router.token = token
+            
+            completion(true,nil)
         }
     }
     

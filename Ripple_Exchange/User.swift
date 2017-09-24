@@ -7,20 +7,16 @@
 //
 
 import Foundation
-import Cely
 
-class User:CelyUser {
+class User {
     
     var customerId:String!
     var connected_Account_Id:String!
-    var token:String!
     var inboundBalance:String = ""
     var outBoundBalance:String = ""
+    var email:String!
+    var password:String!
     static var currentUser = User()
-    
-    enum Property: CelyProperty {
-        case token = "token"
-    }
     
     init() {
         
@@ -29,7 +25,6 @@ class User:CelyUser {
     init(customerId:String,connected_Account_Id:String,token:String) {
         self.customerId = customerId
         self.connected_Account_Id = connected_Account_Id
-        self.token = token
         User.currentUser = self
     }
 }

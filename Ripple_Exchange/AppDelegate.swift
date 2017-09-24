@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Cely
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,16 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Cely.setup(with: window!, forModel: User(), requiredProperties: [.token], withOptions: [
-            .loginStyle: XrpStyle(),
-            .loginCompletionBlock: { (username: String, password: String) in
-                print("user name is \(username) password is \(password)")
-                Presenter().presentSignIn(email: username, password: password)
-                //Cely.save(username, forKey: "username")
-                //Cely.save("FAKETOKEN:\(username)\(password)", forKey: "token", securely: true)
-                Cely.changeStatus(to: .loggedIn)
-            }
-        ])
+        IQKeyboardManager.sharedManager().enable = true
         return true
     }
 

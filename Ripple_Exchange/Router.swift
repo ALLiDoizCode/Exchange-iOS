@@ -41,7 +41,7 @@ enum Router: URLRequestConvertible {
     case instantPayout(parameters: Parameters)
     
     static let baseURLString = "https://ripple-exchange-app.herokuapp.com"
-    static let token = ""
+    static var token = ""
     
     var method: HTTPMethod {
         switch self {

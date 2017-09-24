@@ -1,28 +1,29 @@
 PODS:
   - Alamofire (4.5.1)
   - CardIO (5.4.1)
-  - Cely (2.0.0):
-    - Cely/Core (= 2.0.0)
-  - Cely/Core (2.0.0)
+  - IQKeyboardManagerSwift (5.0.0)
   - Material (2.10.2):
     - Material/Core (= 2.10.2)
   - Material/Core (2.10.2)
   - SwiftyJSON (3.1.4)
+  - Validator (3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - CardIO
-  - Cely (~> 2.0.0)
+  - IQKeyboardManagerSwift
   - Material (~> 2.0)
   - SwiftyJSON
+  - Validator
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
-  Cely: 10e51eadc776f132982446165b4f35c11b8970bd
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
   Material: 8265a77332acfb7872a7fd0f4f2023f080d25d1f
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Validator: 7d9828daffabc757604603052e407f208fa9b6d5
 
-PODFILE CHECKSUM: 563659571eac2679b3eec69f24276569957d2da3
+PODFILE CHECKSUM: 8b9315b6a6ceb160989380a933508387bed910c4
 
 COCOAPODS: 1.3.1

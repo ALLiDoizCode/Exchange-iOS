@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */; };
 		4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FA5601F76C2E2007B4492 /* Params.swift */; };
-		4D3501181F77A39E00959AD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501171F77A39E00959AD1 /* LoginViewController.swift */; };
-		4D35011A1F77A70E00959AD1 /* LoginStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501191F77A70E00959AD1 /* LoginStyle.swift */; };
+		4D35011E1F780B2700959AD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35011D1F780B2700959AD1 /* MainViewController.swift */; };
+		4D3501211F780D8500959AD1 /* WalletBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501201F780D8500959AD1 /* WalletBalanceView.swift */; };
+		4D3501241F780D9B00959AD1 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501231F780D9B00959AD1 /* TransactionView.swift */; };
+		4D3501271F780F5B00959AD1 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501261F780F5B00959AD1 /* AddressCell.swift */; };
+		4D3501291F780F6700959AD1 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501281F780F6700959AD1 /* TransactionCell.swift */; };
+		4D40AE841F783E8B0069EB2D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40AE831F783E8B0069EB2D /* Errors.swift */; };
 		4D9D53B21F760F150096EEB2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D53B11F760F150096EEB2 /* Router.swift */; };
 		4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0511F76E916005AE03A /* Presenter.swift */; };
 		4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0541F771D39005AE03A /* NewAccount.swift */; };
@@ -19,6 +23,7 @@
 		4DC1A05B1F775B19005AE03A /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A05A1F775B19005AE03A /* Charge.swift */; };
 		4DC1A05E1F776609005AE03A /* PlaidController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A05D1F776609005AE03A /* PlaidController.swift */; };
 		4DC1A0601F777A1E005AE03A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A05F1F777A1E005AE03A /* CardViewController.swift */; };
+		4DE777E81F782B2F00790D5E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE777E71F782B2F00790D5E /* SignInViewController.swift */; };
 		4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC68191F7559CD001A3185 /* AppDelegate.swift */; };
 		4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC681B1F7559CD001A3185 /* ViewController.swift */; };
 		4DFC681F1F7559CD001A3185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC681D1F7559CD001A3185 /* Main.storyboard */; };
@@ -50,8 +55,12 @@
 		05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ripple_Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange.release.xcconfig"; sourceTree = "<group>"; };
 		4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeClient.swift; sourceTree = "<group>"; };
 		4D0FA5601F76C2E2007B4492 /* Params.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
-		4D3501171F77A39E00959AD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4D3501191F77A70E00959AD1 /* LoginStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStyle.swift; sourceTree = "<group>"; };
+		4D35011D1F780B2700959AD1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4D3501201F780D8500959AD1 /* WalletBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBalanceView.swift; sourceTree = "<group>"; };
+		4D3501231F780D9B00959AD1 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		4D3501261F780F5B00959AD1 /* AddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		4D3501281F780F6700959AD1 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		4D40AE831F783E8B0069EB2D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		4D9D53B11F760F150096EEB2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4DC1A0511F76E916005AE03A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		4DC1A0541F771D39005AE03A /* NewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 		4DC1A05D1F776609005AE03A /* PlaidController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidController.swift; sourceTree = "<group>"; };
 		4DC1A05F1F777A1E005AE03A /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		4DC1A0611F777A90005AE03A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4DE777E71F782B2F00790D5E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		4DFC68161F7559CD001A3185 /* Ripple_Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ripple_Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC68191F7559CD001A3185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DFC681B1F7559CD001A3185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +122,24 @@
 			name = Parameters;
 			sourceTree = "<group>";
 		};
+		4D35011F1F780D6500959AD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D3501201F780D8500959AD1 /* WalletBalanceView.swift */,
+				4D3501231F780D9B00959AD1 /* TransactionView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4D3501251F780F3100959AD1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D3501261F780F5B00959AD1 /* AddressCell.swift */,
+				4D3501281F780F6700959AD1 /* TransactionCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		4D562CF68E912469B78DFA03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +174,7 @@
 				4DC1A0561F771E88005AE03A /* User.swift */,
 				4DC1A0581F775616005AE03A /* ExchangeTranscation.swift */,
 				4DC1A05A1F775B19005AE03A /* Charge.swift */,
-				4D3501191F77A70E00959AD1 /* LoginStyle.swift */,
+				4D40AE831F783E8B0069EB2D /* Errors.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -156,7 +184,8 @@
 			children = (
 				4DC1A05D1F776609005AE03A /* PlaidController.swift */,
 				4DC1A05F1F777A1E005AE03A /* CardViewController.swift */,
-				4D3501171F77A39E00959AD1 /* LoginViewController.swift */,
+				4D35011D1F780B2700959AD1 /* MainViewController.swift */,
+				4DE777E71F782B2F00790D5E /* SignInViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +215,8 @@
 		4DFC68181F7559CD001A3185 /* Ripple_Exchange */ = {
 			isa = PBXGroup;
 			children = (
+				4D3501251F780F3100959AD1 /* Cells */,
+				4D35011F1F780D6500959AD1 /* Views */,
 				4DC1A05C1F7765E6005AE03A /* Controllers */,
 				4DC1A0531F771D22005AE03A /* Models */,
 				4DC1A0501F76E8DE005AE03A /* Presenter */,
@@ -387,16 +418,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cely/Cely.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cely.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -426,18 +459,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC1A0591F775616005AE03A /* ExchangeTranscation.swift in Sources */,
+				4D3501241F780D9B00959AD1 /* TransactionView.swift in Sources */,
 				4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */,
 				4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */,
 				4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */,
+				4D3501271F780F5B00959AD1 /* AddressCell.swift in Sources */,
 				4D9D53B21F760F150096EEB2 /* Router.swift in Sources */,
+				4D40AE841F783E8B0069EB2D /* Errors.swift in Sources */,
 				4DC1A0571F771E88005AE03A /* User.swift in Sources */,
 				4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */,
+				4DE777E81F782B2F00790D5E /* SignInViewController.swift in Sources */,
+				4D35011E1F780B2700959AD1 /* MainViewController.swift in Sources */,
 				4DC1A05E1F776609005AE03A /* PlaidController.swift in Sources */,
 				4DC1A0601F777A1E005AE03A /* CardViewController.swift in Sources */,
 				4DC1A05B1F775B19005AE03A /* Charge.swift in Sources */,
+				4D3501211F780D8500959AD1 /* WalletBalanceView.swift in Sources */,
+				4D3501291F780F6700959AD1 /* TransactionCell.swift in Sources */,
 				4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */,
-				4D35011A1F77A70E00959AD1 /* LoginStyle.swift in Sources */,
-				4D3501181F77A39E00959AD1 /* LoginViewController.swift in Sources */,
 				4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
