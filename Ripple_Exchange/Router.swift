@@ -40,7 +40,7 @@ enum Router: URLRequestConvertible {
     case exist(parameters: Parameters)
     case instantPayout(parameters: Parameters)
     
-    static let baseURLString = "https://ripple-exchange-app.herokuapp.com/"
+    static let baseURLString = "https://ripple-exchange-app.herokuapp.com"
     static let token = ""
     
     var method: HTTPMethod {
@@ -113,7 +113,7 @@ enum Router: URLRequestConvertible {
             case .createCustomer:
                 return "/createCustomer"
             case .signIn:
-                return "/signIn"
+                return "/signin"
             case .addInbound:
                 return "/addInbound"
             case .createOutBound:
@@ -231,6 +231,7 @@ enum Router: URLRequestConvertible {
             default:
                 break
         }
+        //urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         urlRequest.setValue(Router.token, forHTTPHeaderField: "Authorization")
         return urlRequest
     }

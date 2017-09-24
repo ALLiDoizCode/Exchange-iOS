@@ -22,6 +22,8 @@ class Presenter {
             guard error == nil else {
                 return
             }
+            
+            print("user is \(json)")
         }
     }
     

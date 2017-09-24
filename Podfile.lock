@@ -1,18 +1,28 @@
 PODS:
   - Alamofire (4.5.1)
   - CardIO (5.4.1)
+  - Cely (2.0.0):
+    - Cely/Core (= 2.0.0)
+  - Cely/Core (2.0.0)
+  - Material (2.10.2):
+    - Material/Core (= 2.10.2)
+  - Material/Core (2.10.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - CardIO
+  - Cely (~> 2.0.0)
+  - Material (~> 2.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Cely: 10e51eadc776f132982446165b4f35c11b8970bd
+  Material: 8265a77332acfb7872a7fd0f4f2023f080d25d1f
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 39a1794abccc9b61edfd6234d8b61c7070a10e01
+PODFILE CHECKSUM: 563659571eac2679b3eec69f24276569957d2da3
 
 COCOAPODS: 1.3.1

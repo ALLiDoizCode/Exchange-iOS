@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */; };
 		4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FA5601F76C2E2007B4492 /* Params.swift */; };
+		4D3501181F77A39E00959AD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501171F77A39E00959AD1 /* LoginViewController.swift */; };
+		4D35011A1F77A70E00959AD1 /* LoginStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3501191F77A70E00959AD1 /* LoginStyle.swift */; };
 		4D9D53B21F760F150096EEB2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D53B11F760F150096EEB2 /* Router.swift */; };
 		4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0511F76E916005AE03A /* Presenter.swift */; };
 		4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0541F771D39005AE03A /* NewAccount.swift */; };
@@ -48,6 +50,8 @@
 		05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ripple_Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange.release.xcconfig"; sourceTree = "<group>"; };
 		4D0B1B8A1F76E38100D81F07 /* ExchangeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeClient.swift; sourceTree = "<group>"; };
 		4D0FA5601F76C2E2007B4492 /* Params.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		4D3501171F77A39E00959AD1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D3501191F77A70E00959AD1 /* LoginStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStyle.swift; sourceTree = "<group>"; };
 		4D9D53B11F760F150096EEB2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4DC1A0511F76E916005AE03A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		4DC1A0541F771D39005AE03A /* NewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				4DC1A0561F771E88005AE03A /* User.swift */,
 				4DC1A0581F775616005AE03A /* ExchangeTranscation.swift */,
 				4DC1A05A1F775B19005AE03A /* Charge.swift */,
+				4D3501191F77A70E00959AD1 /* LoginStyle.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				4DC1A05D1F776609005AE03A /* PlaidController.swift */,
 				4DC1A05F1F777A1E005AE03A /* CardViewController.swift */,
+				4D3501171F77A39E00959AD1 /* LoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -381,11 +387,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ripple_Exchange/Pods-Ripple_Exchange-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cely/Cely.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cely.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +436,8 @@
 				4DC1A0601F777A1E005AE03A /* CardViewController.swift in Sources */,
 				4DC1A05B1F775B19005AE03A /* Charge.swift in Sources */,
 				4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */,
+				4D35011A1F77A70E00959AD1 /* LoginStyle.swift in Sources */,
+				4D3501181F77A39E00959AD1 /* LoginViewController.swift in Sources */,
 				4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
