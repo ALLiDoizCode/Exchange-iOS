@@ -292,6 +292,7 @@
 				TargetAttributes = {
 					4DFC68151F7559CD001A3185 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2K5QEB378V;
 						ProvisioningStyle = Automatic;
 					};
 					4DFC68291F7559CE001A3185 = {
@@ -580,6 +581,7 @@
 			baseConfigurationReference = D6F71CB0E13583FCED1E299F /* Pods-Ripple_Exchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2K5QEB378V;
 				INFOPLIST_FILE = Ripple_Exchange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exchange.Ripple-Exchange";
@@ -594,6 +596,7 @@
 			baseConfigurationReference = 05E4F029F187CFF5027B3F5A /* Pods-Ripple_Exchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2K5QEB378V;
 				INFOPLIST_FILE = Ripple_Exchange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exchange.Ripple-Exchange";
