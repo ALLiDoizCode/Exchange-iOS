@@ -13,6 +13,10 @@
 		4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0511F76E916005AE03A /* Presenter.swift */; };
 		4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0541F771D39005AE03A /* NewAccount.swift */; };
 		4DC1A0571F771E88005AE03A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0561F771E88005AE03A /* User.swift */; };
+		4DC1A0591F775616005AE03A /* ExchangeTranscation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0581F775616005AE03A /* ExchangeTranscation.swift */; };
+		4DC1A05B1F775B19005AE03A /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A05A1F775B19005AE03A /* Charge.swift */; };
+		4DC1A05E1F776609005AE03A /* PlaidController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A05D1F776609005AE03A /* PlaidController.swift */; };
+		4DC1A0601F777A1E005AE03A /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A05F1F777A1E005AE03A /* CardViewController.swift */; };
 		4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC68191F7559CD001A3185 /* AppDelegate.swift */; };
 		4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC681B1F7559CD001A3185 /* ViewController.swift */; };
 		4DFC681F1F7559CD001A3185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC681D1F7559CD001A3185 /* Main.storyboard */; };
@@ -48,6 +52,11 @@
 		4DC1A0511F76E916005AE03A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		4DC1A0541F771D39005AE03A /* NewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
 		4DC1A0561F771E88005AE03A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4DC1A0581F775616005AE03A /* ExchangeTranscation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeTranscation.swift; sourceTree = "<group>"; };
+		4DC1A05A1F775B19005AE03A /* Charge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charge.swift; sourceTree = "<group>"; };
+		4DC1A05D1F776609005AE03A /* PlaidController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidController.swift; sourceTree = "<group>"; };
+		4DC1A05F1F777A1E005AE03A /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		4DC1A0611F777A90005AE03A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		4DFC68161F7559CD001A3185 /* Ripple_Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ripple_Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC68191F7559CD001A3185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DFC681B1F7559CD001A3185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,8 +140,19 @@
 			children = (
 				4DC1A0541F771D39005AE03A /* NewAccount.swift */,
 				4DC1A0561F771E88005AE03A /* User.swift */,
+				4DC1A0581F775616005AE03A /* ExchangeTranscation.swift */,
+				4DC1A05A1F775B19005AE03A /* Charge.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		4DC1A05C1F7765E6005AE03A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DC1A05D1F776609005AE03A /* PlaidController.swift */,
+				4DC1A05F1F777A1E005AE03A /* CardViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		4DFC680D1F7559CD001A3185 = {
@@ -160,6 +180,7 @@
 		4DFC68181F7559CD001A3185 /* Ripple_Exchange */ = {
 			isa = PBXGroup;
 			children = (
+				4DC1A05C1F7765E6005AE03A /* Controllers */,
 				4DC1A0531F771D22005AE03A /* Models */,
 				4DC1A0501F76E8DE005AE03A /* Presenter */,
 				4D9D53B01F760ED70096EEB2 /* Clients */,
@@ -169,6 +190,7 @@
 				4DFC68201F7559CD001A3185 /* Assets.xcassets */,
 				4DFC68221F7559CD001A3185 /* LaunchScreen.storyboard */,
 				4DFC68251F7559CD001A3185 /* Info.plist */,
+				4DC1A0611F777A90005AE03A /* Header.h */,
 			);
 			path = Ripple_Exchange;
 			sourceTree = "<group>";
@@ -392,12 +414,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC1A0591F775616005AE03A /* ExchangeTranscation.swift in Sources */,
 				4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */,
 				4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */,
 				4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */,
 				4D9D53B21F760F150096EEB2 /* Router.swift in Sources */,
 				4DC1A0571F771E88005AE03A /* User.swift in Sources */,
 				4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */,
+				4DC1A05E1F776609005AE03A /* PlaidController.swift in Sources */,
+				4DC1A0601F777A1E005AE03A /* CardViewController.swift in Sources */,
+				4DC1A05B1F775B19005AE03A /* Charge.swift in Sources */,
 				4DFC681A1F7559CD001A3185 /* AppDelegate.swift in Sources */,
 				4D0FA5611F76C2E2007B4492 /* Params.swift in Sources */,
 			);
@@ -558,6 +584,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exchange.Ripple-Exchange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/jonathangreen/Documents/Ripple_Exchange/Ripple_Exchange/Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -571,6 +598,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.exchange.Ripple-Exchange";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/jonathangreen/Documents/Ripple_Exchange/Ripple_Exchange/Header.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

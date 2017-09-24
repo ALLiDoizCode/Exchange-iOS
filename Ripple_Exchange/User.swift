@@ -13,6 +13,8 @@ class User {
     var customerId:String!
     var connected_Account_Id:String!
     var token:String!
+    var inboundBalance:String = ""
+    var outBoundBalance:String = ""
     static var currentUser = User()
     init() {
         

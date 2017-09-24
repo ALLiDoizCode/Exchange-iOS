@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.5.1)
+  - CardIO (5.4.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - CardIO
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 059df4a47eb18d50220a5585a055b9c964556d3a
+PODFILE CHECKSUM: 39a1794abccc9b61edfd6234d8b61c7070a10e01
 
 COCOAPODS: 1.3.1
