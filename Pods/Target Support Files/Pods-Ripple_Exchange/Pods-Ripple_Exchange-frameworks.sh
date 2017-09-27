@@ -105,14 +105,22 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Material/Material.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SideMenuController/SideMenuController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Validator/Validator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Material/Material.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SideMenuController/SideMenuController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Validator/Validator.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

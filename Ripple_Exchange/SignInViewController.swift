@@ -9,6 +9,7 @@
 import UIKit
 import Material
 import Validator
+import SideMenuController
 
 class SignInViewController: UIViewController {
     let logo = UILabel()
@@ -18,7 +19,7 @@ class SignInViewController: UIViewController {
     let signUpButton = FlatButton()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
+        self.view.backgroundColor = Color.grey.lighten5
         self.view.addSubview(logo)
         self.view.addSubview(emailField)
         self.view.addSubview(passwordField)
@@ -128,7 +129,8 @@ class SignInViewController: UIViewController {
                     }
                     
                     let controller = MainViewController()
-                    self.navigationController?.pushViewController(controller, animated: true)
+                    self.sideMenuController?.embed(centerViewController: controller)
+                    //self.navigationController?.pushViewController(controller, animated: true)
                 })
             })
         case .invalid( _)?:

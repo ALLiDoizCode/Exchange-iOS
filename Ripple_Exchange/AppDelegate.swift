@@ -8,6 +8,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import SideMenuController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
+        SideMenuController.preferences.drawing.sidePanelPosition = .overCenterPanelLeft
+        SideMenuController.preferences.drawing.sidePanelWidth = 300
+        SideMenuController.preferences.drawing.centerPanelShadow = true
+        SideMenuController.preferences.animating.statusBarBehaviour = .showUnderlay
+        SideMenuController.preferences.interaction.panningEnabled = true
         return true
     }
 

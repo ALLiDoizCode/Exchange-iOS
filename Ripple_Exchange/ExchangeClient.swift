@@ -77,4 +77,38 @@ class ExchangeClient {
             
         }
     }
+    
+    func rippleChart(completion:@escaping (_ charts:[RippleChart]) -> Void) {
+        
+        let headers: HTTPHeaders = [
+            
+            "Content-Type" : "application/json"
+        ]
+        var charts:[RippleChart] = []
+        let now = Date().timeIntervalSince1970
+        let lastMonth = Date().prevWeek(at: .start).timeIntervalSince1970
+        print("lastMonth \(lastMonth)")
+        print("now \(now)")
+        Alamofire.request("https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_NXT&start=\(lastMonth)&end=\(now)", method: HTTPMethod.get, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { (response) in
+            guard response.error == nil else {
+                print("error \(response.error)")
+                return
+            }
+            let json = JSON(response.result.value!)
+            print("got \(json.arrayValue.count) chart points")
+            for object in json.arrayValue {
+                let ISO8601 = object["date"].stringValue
+                let rate = object["amount"].doubleValue
+                let type = object["type"].string
+                
+                if type == "sell" {
+                    let chart = RippleChart(date: ISO8601, rate: rate)
+                    charts.append(chart)
+                }
+                
+            }
+            
+            completion(charts)
+        })
+    }
 }

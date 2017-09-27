@@ -5,7 +5,11 @@ PODS:
   - Material (2.10.2):
     - Material/Core (= 2.10.2)
   - Material/Core (2.10.2)
+  - ScrollableGraphView (4.0.4)
+  - SideMenuController (0.2.4)
+  - SwiftDate (4.4.1)
   - SwiftyJSON (3.1.4)
+  - UIColor_Hex_Swift (3.0.2)
   - Validator (3.0)
 
 DEPENDENCIES:
@@ -13,7 +17,11 @@ DEPENDENCIES:
   - CardIO
   - IQKeyboardManagerSwift
   - Material (~> 2.0)
+  - ScrollableGraphView (~> 4)
+  - SideMenuController
+  - SwiftDate (~> 4.4.0)
   - SwiftyJSON
+  - UIColor_Hex_Swift (~> 3.0.2)
   - Validator
 
 SPEC CHECKSUMS:
@@ -21,9 +29,13 @@ SPEC CHECKSUMS:
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
   Material: 8265a77332acfb7872a7fd0f4f2023f080d25d1f
+  ScrollableGraphView: 072ea302f4ca27779692656a49d51fe537b2b1e7
+  SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
+  SwiftDate: a70a534d4feed03b2a2b575e36bef82dc2286a8d
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
   Validator: 7d9828daffabc757604603052e407f208fa9b6d5
 
-PODFILE CHECKSUM: 8b9315b6a6ceb160989380a933508387bed910c4
+PODFILE CHECKSUM: f1dade449103b5689aa19149359053c0782e93b2
 
 COCOAPODS: 1.3.1
