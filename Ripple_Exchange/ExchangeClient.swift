@@ -86,12 +86,12 @@ class ExchangeClient {
         ]
         var charts:[RippleChart] = []
         let now = Date().timeIntervalSince1970
-        let lastMonth = Date().prevWeek(at: .start).timeIntervalSince1970
+        let lastMonth = Date().prevMonth(at: .end).timeIntervalSince1970
         print("lastMonth \(lastMonth)")
         print("now \(now)")
         Alamofire.request("https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_NXT&start=\(lastMonth)&end=\(now)", method: HTTPMethod.get, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { (response) in
             guard response.error == nil else {
-                print("error \(response.error)")
+                print("error \(String(describing: response.error))")
                 return
             }
             let json = JSON(response.result.value!)

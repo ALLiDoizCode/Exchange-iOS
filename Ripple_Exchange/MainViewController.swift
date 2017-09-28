@@ -42,19 +42,31 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
             ExchangeClient.sharedInstance.rippleChart { (objects) in
                 DispatchQueue.main.async {
                     // Run UI Updates
-                    var months:[String] = []
-                    var dates:[(String,Int)] = []
+                    //let currentMonth = Date().monthName
+                    //let previousMonth = Date().prevMonth.monthName
+                    //var dates:[(String,Int,Double)] = []
                     for object in objects {
-                        
-                        guard months.contains(object.month) else {
-                            months.append(object.month)
-                            return
+                        print("ploting points")
+                        let contain = self.charts.contains(where: { date in
+                            if date.0 == object.month && date.1 == object.day {
+                                return true
+                            }else {
+                                return false
+                            }
+                        })
+                        if contain == false {
+                            var amount:Double = 0
+                            for subObject in objects {
+                                if subObject.month! == object.month! && subObject.day! == object.day!  {
+                                    amount += subObject.rate!
+                                }
+                            }
+                            let date = (object.month!,object.day!,amount)
+                            self.charts.append(date)
                         }
-                        
                     }
                     
-                    
-                    self.charts.append(newPoint)
+                    print("Will show \(self.charts.count) charts")
                     self.graphView.reload()
                 }
             }
@@ -150,13 +162,13 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
         // Setup the reference lines.
         let referenceLines = ReferenceLines()
         
-        referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 24)
+        referenceLines.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 17)
         referenceLines.referenceLineColor = Color.blue.accent3
         referenceLines.referenceLineLabelColor = Color.brown.lighten2
         
         referenceLines.positionType = .absolute
         // Reference lines will be shown at these values on the y-axis.
-        referenceLines.absolutePositions = [100, 5000, 10000, 20000]
+        referenceLines.absolutePositions = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
         referenceLines.includeMinMax = false
         
         referenceLines.dataPointLabelColor = Color.blue.accent3
@@ -164,7 +176,7 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
         // Setup the graph
         graphView.backgroundFillColor = UIColor("#333333")
 
-        graphView.dataPointSpacing = 80
+        graphView.dataPointSpacing = 50
         graphView.shouldAnimateOnStartup = true
         graphView.shouldAdaptRange = true
         graphView.shouldRangeAlwaysStartAtZero = true
@@ -179,7 +191,7 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
     
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
         print("rate is \(charts[pointIndex].2)")
-        return charts[pointIndex].2
+        return charts[pointIndex].2/1000000
     }
     
     func label(atIndex pointIndex: Int) -> String {

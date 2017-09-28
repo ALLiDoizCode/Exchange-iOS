@@ -22,7 +22,7 @@ class RippleChart {
         self.rate = rate
         
         let currentYear = self.date.date(format: .iso8601Auto)?.year
-        let currentMonth = self.date.date(format: .iso8601Auto)?.monthName
+        let currentMonth = self.date.date(format: .iso8601Auto)?.shortMonthName
         let currentDay = self.date.date(format: .iso8601Auto)?.day
          
         self.year = currentYear
