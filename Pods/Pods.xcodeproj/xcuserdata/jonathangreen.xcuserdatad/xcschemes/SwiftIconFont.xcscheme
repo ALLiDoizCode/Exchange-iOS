@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7CB772D1D54359D63D559A77DBB3BF15'
-               BlueprintName = 'Validator'
+               BlueprintIdentifier = '4F8B393705BFD66279A331E25AC2C820'
+               BlueprintName = 'SwiftIconFont'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Validator.framework'>
+               BuildableName = 'SwiftIconFont.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

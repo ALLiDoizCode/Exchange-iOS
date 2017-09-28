@@ -129,7 +129,7 @@ class SignInViewController: UIViewController {
                     }
                     
                     let controller = MainViewController()
-                    self.sideMenuController?.embed(centerViewController: controller)
+                    self.sideMenuController?.embed(centerViewController: controller, cacheIdentifier: "dashboard")
                     //self.navigationController?.pushViewController(controller, animated: true)
                 })
             })

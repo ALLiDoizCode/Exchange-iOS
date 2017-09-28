@@ -8,6 +8,7 @@ PODS:
   - ScrollableGraphView (4.0.4)
   - SideMenuController (0.2.4)
   - SwiftDate (4.4.1)
+  - SwiftIconFont (2.7.1)
   - SwiftyJSON (3.1.4)
   - UIColor_Hex_Swift (3.0.2)
   - Validator (3.0)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - ScrollableGraphView (~> 4)
   - SideMenuController
   - SwiftDate (~> 4.4.0)
+  - SwiftIconFont
   - SwiftyJSON
   - UIColor_Hex_Swift (~> 3.0.2)
   - Validator
@@ -32,10 +34,11 @@ SPEC CHECKSUMS:
   ScrollableGraphView: 072ea302f4ca27779692656a49d51fe537b2b1e7
   SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
   SwiftDate: a70a534d4feed03b2a2b575e36bef82dc2286a8d
+  SwiftIconFont: 33d13d656c2dd7ed8464169a815b5b81d7250878
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
   Validator: 7d9828daffabc757604603052e407f208fa9b6d5
 
-PODFILE CHECKSUM: f1dade449103b5689aa19149359053c0782e93b2
+PODFILE CHECKSUM: 5ef1621b44a3e1c3966105d84bb2eb48df8f4e29
 
 COCOAPODS: 1.3.1

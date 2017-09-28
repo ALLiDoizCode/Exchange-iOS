@@ -20,11 +20,10 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
     var transactionView = TransactionView()
     var charts:[(String,Int,Double)] = []
     var graphView:ScrollableGraphView = ScrollableGraphView()
-    var currentTitle = UILabel()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = Color.blue.accent2
         self.view.addSubview(ripplePriceLbl)
         self.view.addSubview(rippleFeeLabel)
         self.view.addSubview(buyBtn)
@@ -32,9 +31,8 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
         self.view.addSubview(walletView)
         self.view.addSubview(transactionView)
         self.view.addSubview(graphView)
-        self.view.addSubview(currentTitle)
-        setupViews()
-        constrainViews()
+        setup()
+        constrain()
         graphView.dataSource = self
         setupGraph()
         DispatchQueue.global(qos: .background).async {
@@ -80,7 +78,7 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
     }
     
     
-    func setupViews() {
+    func setup() {
         
         buyBtn.setTitle("Buy", for: .normal)
         buyBtn.setTitleColor(Color.grey.lighten5, for: .normal)
@@ -97,20 +95,17 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
         sellBtn.cornerRadius = 0
         
         currentTitle.text = "Dashboard"
-        currentTitle.font = RobotoFont.bold(with: 24)
-        currentTitle.textColor = Color.grey.lighten5
-        currentTitle.textAlignment = .center
+        subTitle.text = "Volume Sold By Million"
         
     }
     
-    func constrainViews() {
+    func constrain() {
         
         sellBtn.translatesAutoresizingMaskIntoConstraints = false
         buyBtn.translatesAutoresizingMaskIntoConstraints = false
         walletView.translatesAutoresizingMaskIntoConstraints = false
         graphView.translatesAutoresizingMaskIntoConstraints = false
-        currentTitle.translatesAutoresizingMaskIntoConstraints = false
-        
+
         sellBtn.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
         sellBtn.leftAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
         sellBtn.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.12).isActive = true
@@ -126,15 +121,11 @@ class MainViewController: SideViewController,ScrollableGraphViewDataSource {
         walletView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
         walletView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
         
-        graphView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.40).isActive = true
+        graphView.topAnchor.constraint(equalTo: subTitle.bottomAnchor, constant: 10).isActive = true
         graphView.bottomAnchor.constraint(equalTo: walletView.topAnchor, constant: 0).isActive = true
         graphView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
         graphView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
         
-        currentTitle.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        currentTitle.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20).isActive = true
-        currentTitle.bottomAnchor.constraint(equalTo: button.bottomAnchor, constant: 0).isActive = true
-        currentTitle.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.35).isActive = true
     }
     
     func setupGraph() {

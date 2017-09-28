@@ -35,7 +35,7 @@ class MenuViewController: UIViewController {
         let nc1 = UINavigationController(rootViewController: vc1)
         
         // create the side controller
-        let sideController = UITableViewController()
+        let sideController = MenuTableViewController()
         
         // embed the side and center controllers
         sideMenuViewController.embed(sideViewController: sideController)

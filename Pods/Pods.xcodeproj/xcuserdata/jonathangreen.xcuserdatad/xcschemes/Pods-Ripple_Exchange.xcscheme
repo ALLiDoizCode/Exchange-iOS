@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFF57EA62A0D57D90F6EB6FA2325456A"
+               BlueprintIdentifier = "A4903AE4C11D44BEB03DA6EE4CB1B342"
                BuildableName = "Pods_Ripple_Exchange.framework"
                BlueprintName = "Pods-Ripple_Exchange"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFF57EA62A0D57D90F6EB6FA2325456A"
+            BlueprintIdentifier = "A4903AE4C11D44BEB03DA6EE4CB1B342"
             BuildableName = "Pods_Ripple_Exchange.framework"
             BlueprintName = "Pods-Ripple_Exchange"
             ReferencedContainer = "container:Pods.xcodeproj">

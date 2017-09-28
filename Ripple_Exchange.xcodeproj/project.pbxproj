@@ -18,6 +18,10 @@
 		4D40AE8A1F7868CA0069EB2D /* RippleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40AE891F7868CA0069EB2D /* RippleChart.swift */; };
 		4D4D33291F7B49950027B808 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D33281F7B49950027B808 /* MenuViewController.swift */; };
 		4D4D332C1F7B51D10027B808 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D332B1F7B51D10027B808 /* SideViewController.swift */; };
+		4D4D332E1F7CAD970027B808 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D332D1F7CAD970027B808 /* MenuTableViewController.swift */; };
+		4D4D33301F7CAE170027B808 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D332F1F7CAE170027B808 /* MenuTableViewCell.swift */; };
+		4D4D33321F7D529C0027B808 /* DepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D33311F7D529C0027B808 /* DepositViewController.swift */; };
+		4D4D33341F7D52BF0027B808 /* WithdrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D33331F7D52BF0027B808 /* WithdrawViewController.swift */; };
 		4D9D53B21F760F150096EEB2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D53B11F760F150096EEB2 /* Router.swift */; };
 		4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0511F76E916005AE03A /* Presenter.swift */; };
 		4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1A0541F771D39005AE03A /* NewAccount.swift */; };
@@ -67,6 +71,10 @@
 		4D40AE891F7868CA0069EB2D /* RippleChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleChart.swift; sourceTree = "<group>"; };
 		4D4D33281F7B49950027B808 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4D4D332B1F7B51D10027B808 /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
+		4D4D332D1F7CAD970027B808 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		4D4D332F1F7CAE170027B808 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		4D4D33311F7D529C0027B808 /* DepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositViewController.swift; sourceTree = "<group>"; };
+		4D4D33331F7D52BF0027B808 /* WithdrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawViewController.swift; sourceTree = "<group>"; };
 		4D9D53B11F760F150096EEB2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4DC1A0511F76E916005AE03A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		4DC1A0541F771D39005AE03A /* NewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 			children = (
 				4D3501261F780F5B00959AD1 /* AddressCell.swift */,
 				4D3501281F780F6700959AD1 /* TransactionCell.swift */,
+				4D4D332F1F7CAE170027B808 /* MenuTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -195,6 +204,9 @@
 				4DE777E71F782B2F00790D5E /* SignInViewController.swift */,
 				4D4D33281F7B49950027B808 /* MenuViewController.swift */,
 				4D4D332B1F7B51D10027B808 /* SideViewController.swift */,
+				4D4D332D1F7CAD970027B808 /* MenuTableViewController.swift */,
+				4D4D33311F7D529C0027B808 /* DepositViewController.swift */,
+				4D4D33331F7D52BF0027B808 /* WithdrawViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -432,6 +444,7 @@
 				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenuController/SideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
@@ -444,6 +457,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
@@ -477,9 +491,11 @@
 			files = (
 				4DC1A0591F775616005AE03A /* ExchangeTranscation.swift in Sources */,
 				4D3501241F780D9B00959AD1 /* TransactionView.swift in Sources */,
+				4D4D33301F7CAE170027B808 /* MenuTableViewCell.swift in Sources */,
 				4D40AE8A1F7868CA0069EB2D /* RippleChart.swift in Sources */,
 				4DC1A0521F76E916005AE03A /* Presenter.swift in Sources */,
 				4DFC681C1F7559CD001A3185 /* ViewController.swift in Sources */,
+				4D4D332E1F7CAD970027B808 /* MenuTableViewController.swift in Sources */,
 				4D4D332C1F7B51D10027B808 /* SideViewController.swift in Sources */,
 				4D0B1B8B1F76E38100D81F07 /* ExchangeClient.swift in Sources */,
 				4D3501271F780F5B00959AD1 /* AddressCell.swift in Sources */,
@@ -487,9 +503,11 @@
 				4D40AE841F783E8B0069EB2D /* Errors.swift in Sources */,
 				4DC1A0571F771E88005AE03A /* User.swift in Sources */,
 				4D4D33291F7B49950027B808 /* MenuViewController.swift in Sources */,
+				4D4D33321F7D529C0027B808 /* DepositViewController.swift in Sources */,
 				4DC1A0551F771D39005AE03A /* NewAccount.swift in Sources */,
 				4DE777E81F782B2F00790D5E /* SignInViewController.swift in Sources */,
 				4D35011E1F780B2700959AD1 /* MainViewController.swift in Sources */,
+				4D4D33341F7D52BF0027B808 /* WithdrawViewController.swift in Sources */,
 				4DC1A05E1F776609005AE03A /* PlaidController.swift in Sources */,
 				4DC1A0601F777A1E005AE03A /* CardViewController.swift in Sources */,
 				4DC1A05B1F775B19005AE03A /* Charge.swift in Sources */,
